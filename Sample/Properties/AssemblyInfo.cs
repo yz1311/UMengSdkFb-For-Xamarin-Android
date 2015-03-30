@@ -28,5 +28,5 @@ using Android.App;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: MetaData("UMENG_APPKEY", Value = "551509c5fd98c59338000068")]
+[assembly: MetaData("UMENG_APPKEY", Value = "")]
 [assembly: MetaData("UMENG_CHANNEL", Value = "other")]

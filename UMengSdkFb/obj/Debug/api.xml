@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.umeng.fb">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FeedbackAgent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FeedbackAgent" static="false" type="com.umeng.fb.FeedbackAgent" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeAudioFeedback" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeFeedbackPush" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllConversationIds" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConversationById" native="false" return="com.umeng.fb.model.Conversation" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultConversation" native="false" return="com.umeng.fb.model.Conversation" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfo" native="false" return="com.umeng.fb.model.UserInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfoLastUpdateAt" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openAudioFeedback" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openFeedbackPush" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeWelcomeInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDebug" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUserInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.UserInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWelcomeInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWelcomeInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showReplyNotification" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;com.umeng.fb.model.Reply&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startFeedbackActivity" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sync" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateUserInfo" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="FeedbackAgent.1" obfuscated="true" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FeedbackAgent.2" obfuscated="true" static="false" visibility="">
+<implements name="com.umeng.fb.SyncListener" name-generic-aware="com.umeng.fb.SyncListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceiveDevReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;com.umeng.fb.model.Reply&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSendUserReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;com.umeng.fb.model.Reply&gt;">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SyncListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onReceiveDevReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;com.umeng.fb.model.Reply&gt;">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSendUserReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.List&lt;com.umeng.fb.model.Reply&gt;">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.a" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.umeng.fb&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="f" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;5.2.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.umeng.fb.adapter">
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.adapter.a" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="com.umeng.fb.model.Conversation">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.os.Handler" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.1" obfuscated="true" static="false" visibility="">
+<implements name="com.umeng.fb.model.Conversation.OnChangeListener" name-generic-aware="com.umeng.fb.model.Conversation.OnChangeListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="a.2" obfuscated="true" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.3" obfuscated="true" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.umeng.fb.adapter.a.b" extends-generic-aware="com.umeng.fb.adapter.a.b" final="false" name="a.a" obfuscated="true" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.b" obfuscated="true" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.umeng.fb.adapter.a.b" extends-generic-aware="com.umeng.fb.adapter.a.b" final="false" name="a.c" obfuscated="true" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.umeng.fb.adapter.a.b" extends-generic-aware="com.umeng.fb.adapter.a.b" final="false" name="a.d" obfuscated="true" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.umeng.fb.audio">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AudioAgent" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioDuration" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioInitStatus" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.umeng.fb.audio.AudioAgent" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPlayStatus" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRecordStatus" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recordShortStop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recordStart" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recordStop" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startPlay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopPlayer" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="int" type-generic-aware="int" value="16000" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="f" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AudioAgent.a" obfuscated="true" static="false" visibility="">
+<implements name="com.umeng.fb.audio.c.a" name-generic-aware="com.umeng.fb.audio.c.a">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AudioAgent.b" obfuscated="true" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.audio.a" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.Boolean" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.umeng.fb.audio.b" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="true" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="false" synchronized="true" visibility="protected">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b.a" obfuscated="true" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c" static="false" type="com.umeng.fb.audio.c" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.audio.c.a">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.1" obfuscated="true" static="true" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="c.a" obfuscated="true" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Integer, java.lang.Integer&gt;" final="false" name="c.b" obfuscated="true" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="c.b" static="false" type="com.umeng.fb.audio.c.b" visibility="public">
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="com.umeng.fb.audio.c.c">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Integer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.Integer" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.umeng.fb.audio.c.c&gt;" final="true" name="c.c" obfuscated="true" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="com.umeng.fb.audio.c.c" type-generic-aware="com.umeng.fb.audio.c.c" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="com.umeng.fb.audio.c.c" type-generic-aware="com.umeng.fb.audio.c.c" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="com.umeng.fb.audio.c.c" type-generic-aware="com.umeng.fb.audio.c.c" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.umeng.fb.common">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.common.a" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Android&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;5.2.0.20150212&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Android&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;2.0&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.umeng.message.UmengService&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="f" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;/umeng/fb/audio/&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="g" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;/umeng/fb/image/&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="h" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;/umeng/fb/audio/cache/&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="i" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;.opus&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="j" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;.raw&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="k" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;.wav&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="l" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;cache.wav&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="m" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;.jpg&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="n" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;: &quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.umeng.fb.common.b" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="com.umeng.fb.fragment">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FeedbackFragment.14" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.umeng.fb.fragment.FeedbackFragment.DialogStatus&gt;" final="true" name="FeedbackFragment.DialogStatus" static="true" visibility="">
+<field deprecated="not deprecated" final="true" name="AudioRecordErr" static="true" transient="false" type="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" type-generic-aware="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CuntDown" static="true" transient="false" type="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" type-generic-aware="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NoRecordPermission" static="true" transient="false" type="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" type-generic-aware="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ReleaseCancel" static="true" transient="false" type="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" type-generic-aware="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SlideUpCancel" static="true" transient="false" type="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" type-generic-aware="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TimeShort" static="true" transient="false" type="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" type-generic-aware="com.umeng.fb.fragment.FeedbackFragment.DialogStatus" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.umeng.fb.image">
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="a.2" obfuscated="true" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a.3" obfuscated="true" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.umeng.fb.image.b" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.BitmapFactory.Options">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Boolean&gt;" final="false" name="b.1" obfuscated="true" static="true" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.Boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.umeng.fb.model">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation" static="false" visibility="public">
+<implements name="java.lang.Comparable" name-generic-aware="java.lang.Comparable&lt;com.umeng.fb.model.Conversation&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="com.umeng.fb.model.Conversation" static="true" synchronized="false" visibility="protected">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="org.json.JSONArray">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<exception name="JSONException" type="org.json.JSONException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addUserReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addUserReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Conversation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReplyList" native="false" return="java.util.List&lt;com.umeng.fb.model.Reply&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="com.umeng.fb.model.Conversation" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="com.umeng.fb.model.Conversation" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendReplyOnlyOne" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Conversation.OnChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.SyncListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toJson" native="false" return="org.json.JSONArray" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.1.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.1.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.1.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.1.4" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.2.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.2.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Conversation.2.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Integer, java.lang.Boolean&gt;" final="false" name="Conversation.GetUidTask" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="Conversation.GetUidTask" static="false" type="com.umeng.fb.model.Conversation.GetUidTask" visibility="public">
+<parameter name="p1" type="java.lang.Runnable">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.Boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Conversation.OnChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Reply" static="false" visibility="public">
+<implements name="java.lang.Comparable" name-generic-aware="java.lang.Comparable&lt;com.umeng.fb.model.Reply&gt;">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Reply" static="false" type="com.umeng.fb.model.Reply" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Reply" static="false" type="com.umeng.fb.model.Reply" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+<parameter name="p4" type="java.lang.String">
+</parameter>
+<parameter name="p5" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromJson" native="false" return="com.umeng.fb.model.Reply" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+<exception name="JSONException" type="org.json.JSONException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toJson" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_AUDIO_REPLY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;audio_reply&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_IMAGE_REPLY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;image_reply&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_TEXT_REPLY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;text_reply&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_NOT_SENT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;not_sent&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_SENDING" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;sending&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_SENT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;sent&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_WILL_SENT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;will_sent&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_DEV_REPLY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;dev_reply&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_NEW_FEEDBACK" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;new_feedback&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_USER_REPLY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;user_reply&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="audio_duration" static="false" transient="false" type="float" type-generic-aware="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="content" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="content_type" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="created_at" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="feedback_id" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="reply_id" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="status" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="type" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Store" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllConversationIds" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConversationById" native="false" return="com.umeng.fb.model.Conversation" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeviceUUID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.umeng.fb.model.Store" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUid" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfo" native="false" return="com.umeng.fb.model.UserInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfoLastSyncAt" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfoLastUpdateAt" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMigrated" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="migrateData" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeConversation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveConversation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.umeng.fb.model.Conversation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveUserInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.model.UserInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUid" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUserInfoLastSyncAt" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="UserInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UserInfo" static="false" type="com.umeng.fb.model.UserInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAgeGroup" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContact" native="false" return="java.util.Map&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGender" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemark" native="false" return="java.util.Map&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemarkJson" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAgeGroup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContact" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGender" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRemark" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toJson" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+<package name="com.umeng.fb.net">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.net.a" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.Map" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.List&lt;com.umeng.fb.model.Reply&gt;" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="JSONException" type="org.json.JSONException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.util.Map" static="false" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="com.umeng.fb.model.Reply">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http://fb.umeng.com&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http://fb.umeng.com/api/v2/user/getuid&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http://fb.umeng.com/api/v2/feedback/reply/new&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="d" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http://fb.umeng.com/api/v2/feedback/reply/show&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="e" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http://fb.umeng.com/api/v2/feedback/new&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="f" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http://fb.umeng.com/api/v2/user/update&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.umeng.fb.opus">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="OpusTool" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="OpusTool" static="false" type="com.umeng.fb.opus.OpusTool" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.umeng.fb.push">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FBMessage" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FBMessage" static="false" type="com.umeng.fb.push.FBMessage" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="custom" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FeedbackPush" static="false" visibility="public">
+<implements name="com.umeng.fb.push.c" name-generic-aware="com.umeng.fb.push.c">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearPushInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dealFBMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.push.FBMessage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.umeng.fb.push.FeedbackPush" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFBMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConversationId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFBPushCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.push.c.a">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFbFragmentTag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="">
+<implements name="com.umeng.fb.push.c" name-generic-aware="com.umeng.fb.push.c">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearPushInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dealFBMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.push.FBMessage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFBMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConversationId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFBPushCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.push.c.a">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFbFragmentTag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="b.2" obfuscated="true" static="false" visibility=""/>
+<interface abstract="true" deprecated="not deprecated" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="clearPushInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="dealFBMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.push.FBMessage">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="disable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="enable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onFBMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setConversationId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFBPushCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.umeng.fb.push.c.a">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFbFragmentTag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="c.a" obfuscated="true" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAddPushDevReply" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package>
+<package name="com.umeng.fb.res">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.res.a" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.umeng.fb.res.b" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c" static="false" type="com.umeng.fb.res.c" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="d" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="d" static="false" type="com.umeng.fb.res.d" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="e" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="e" static="false" type="com.umeng.fb.res.e" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="A" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="B" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="C" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="n" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="o" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="p" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="q" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="r" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="s" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="t" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="u" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="x" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="y" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="z" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="f" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="f" static="false" type="com.umeng.fb.res.f" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="g" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="g" static="false" type="com.umeng.fb.res.g" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="A" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="B" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="n" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="o" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="p" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="q" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="r" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="s" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="t" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="u" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="x" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="y" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="z" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="h" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="h" static="false" type="com.umeng.fb.res.h" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.umeng.fb.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Log" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Log" static="false" type="com.umeng.fb.util.Log" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Exception">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Exception">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Exception">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Exception">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Exception">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="LOG" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Res" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.umeng.fb.util.Res" static="true" synchronized="true" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPackageName" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="a" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="a" static="false" type="com.umeng.fb.util.a" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="DataFormatException" type="java.util.zip.DataFormatException">
+</exception>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<exception name="DataFormatException" type="java.util.zip.DataFormatException">
+</exception>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="a" static="true" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="b" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="b" static="false" type="com.umeng.fb.util.b" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.util.Date" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Date">
+</parameter>
+<parameter name="p1" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="javax.microedition.khronos.opengles.GL10">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="f" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="g" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="h" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="j" native="false" return="java.lang.String[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="k" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="l" native="false" return="android.location.Location" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="m" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="n" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="o" native="false" return="java.lang.String[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="p" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="q" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="r" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="s" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="t" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="u" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="b" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Unknown&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="c" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="c" static="false" type="com.umeng.fb.util.c" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="boolean" static="true" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="c.1" obfuscated="true" static="true" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="d" obfuscated="true" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="d" static="false" type="com.umeng.fb.util.d" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="org.json.JSONObject" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.SharedPreferences.Editor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="a" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="b" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="c" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="a" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>
