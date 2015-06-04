@@ -1,6 +1,0 @@
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.umeng.fb", Managed="Com.Umeng.FB")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.umeng.fb.audio", Managed="Com.Umeng.FB.Audio")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.umeng.fb.model", Managed="Com.Umeng.FB.Model")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.umeng.fb.opus", Managed="Com.Umeng.FB.Opus")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.umeng.fb.push", Managed="Com.Umeng.FB.Push")]
-[assembly:global::Android.Runtime.NamespaceMapping (Java = "com.umeng.fb.util", Managed="Com.Umeng.FB.Util")]
