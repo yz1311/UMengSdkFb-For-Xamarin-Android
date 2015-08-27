@@ -6,7 +6,13 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+<attr path="/api/package[@name='com.umeng.fb.push']/class[@name='a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.umeng.fb.push']/interface[@name='c.a']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.umeng.fb.push']/interface[@name='c']" name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.umeng.fb.widget']/interface[@name='PagerSlidingTabStrip.a']" name="obfuscated">false</attr>
+
   <attr path="/api/package[@name='com.umeng.fb.util']/class[@name='Log']/field[@name='LOG']" name="name">Logs</attr>
-  <remove-node path="/api/package[@name='com.umeng.fb.model']/class[@name='Conversation']" />
-  <remove-node path="/api/package[@name='com.umeng.fb.model']/class[@name='Reply']" />
+<attr path="/api/package[@name='com.umeng.fb.model']/class[@name='Conversation']/method[@name='compareTo' and  count(parameter)=1 and parameter[1][@type='com.umeng.fb.model.Conversation']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+<attr path="/api/package[@name='com.umeng.fb.model']/class[@name='Reply']/method[@name='compareTo' and  count(parameter)=1 and parameter[1][@type='com.umeng.fb.model.Reply']]/parameter[1]" name="managedType">Java.Lang.Object</attr>Java.Lang.Object</attr>'Reply']" />
 </metadata>
